@@ -1,0 +1,118 @@
+*, body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  margin-top: 50px;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 130px;
+}
+
+h2, h3 {
+  font-weight: bold;
+  color: #11adad;
+}
+
+h2.main-titles {
+  color: #11adad;
+  font-size: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  padding: 10px 0;
+  margin-top: -50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #11adad;
+}
+
+.nav-logo {
+  max-width: 150px;
+}
+
+.navbar-links {
+  padding-left: 15px;
+}
+
+.project-navigation-wrapper {
+  position: relative;
+}
+
+.project-navigation-links {
+  position: fixed;
+}
+
+.previous-project {
+  bottom: 50%;
+  left: 20px;
+}
+
+.next-project {
+  bottom: 50%;
+  right: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #11adad;
+}
+
+.methodology-box {
+  /* border: 2px dashed #000000; */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2), 10px 0px 10px rgba(0, 0, 0, 0.2);
+  /* border-left: 5px solid rgba(0, 0, 0, 0.1); */
+}
+
+/* For tablet */
+@media screen and (max-width: 990px) {
+  .nav-logo {
+    max-width: 100px;
+  }
+}
+
+/* For mobile */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size 23px;
+  }
+
+  .nav-logo {
+    max-width: 80px;
+  }
+}
