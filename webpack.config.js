@@ -40,6 +40,7 @@ module.exports = {
         host: '0.0.0.0',
         watchContentBase: true,
         contentBase: '.',
+        historyApiFallback: true,
         hot: true,
     }
 };
