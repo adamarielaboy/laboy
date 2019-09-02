@@ -1,7 +1,9 @@
+// const path = require('path');
+
 import React, { Fragment } from 'react';
+import imageFile from "../assets/odyssey-project/citi-photo.png";
 
-
-// <ImageSection images={[]} header={} caption={[]} />
+// Example: <ImageSection images={[]} header={} caption={[]} />
 const ImageSection = ({ images, header, caption }) => (
   <section className="container">
   { (caption || header) && (
@@ -9,11 +11,7 @@ const ImageSection = ({ images, header, caption }) => (
       <div className="col-sm-6 col-xs-10">
         { header && <h2 className="main-titles">{header}</h2>}
         { caption && caption.length > 0 && (
-          <p>{caption.map(c => (
-            <Fragment key={c}>
-              {c}
-            </Fragment>
-          ))}</p>
+          <p dangerouslySetInnerHTML={{__html: caption}} />
         )}
       </div>
     </div>
@@ -22,9 +20,16 @@ const ImageSection = ({ images, header, caption }) => (
     <div className="row center-xs">
       <div className="col-xs-12 col-sm-10">
         {
-          images.map(image => (
-            <img key={image.url} src={image.url} alt={image.alt} />
-          ))
+          images.map(image => {
+            // const img = require("assets/odyssey-project/challenge.png");
+            const img = require(`assets/odyssey-project/${image.alt}`);
+            console.log(image.alt);
+            
+            
+            return (
+              <img key={image.url} src={img} alt={image.alt} />
+            )
+          })
         }
       </div>
     </div>

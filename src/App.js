@@ -7,12 +7,27 @@ import Enroute from './pages/Enroute';
 import Nav from './components/Nav';
 import ProjectNav from './components/ProjectNav';
 
+const PROJECTS = [
+  {
+    name: "Odyssey",
+    url: "/odyssey"
+  },
+  {
+    name: "Main",
+    url: "/"
+  },
+  {
+    name: "Enroute",
+    url: "/enroute"
+  }
+]
+
 export default class App extends Component {
     render() {
       return (
         <Fragment>
           <Nav />
-          <ProjectNav />
+          <ProjectNav projects={PROJECTS} />
           <Router>
             <Switch>
                 <Route path="/" exact component={Main}/>

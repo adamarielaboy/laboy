@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/laboy-logo.svg';
 
 const Nav = () => (
   <nav>
@@ -6,7 +7,7 @@ const Nav = () => (
         <div className="row middle-xs nav-wrapper">
           <div className="col-sm-4">
             <a href="/">
-              <img className="nav-logo" src="laboy-logo.svg" alt="laboy logo" />
+              <img className="nav-logo" src={logo} alt="laboy logo" />
             </a>
           </div>
           <div className="col-sm-6 col-sm-offset-2 end-sm">

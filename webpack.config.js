@@ -13,10 +13,21 @@ module.exports = {
         publicPath:'/',
     },
     module: {
-        rules: [{
-            test: /\.jsx?$/,
-            loader: 'babel-loader',
-        }],
+        rules: [
+            {
+                test: /\.jsx?$/,
+                loader: 'babel-loader',
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                    outputPath: './src/assets',
+                    publicPath: '.',
+                },
+            },
+        ],
     },
     devtool: 'source-map',
     plugins: [

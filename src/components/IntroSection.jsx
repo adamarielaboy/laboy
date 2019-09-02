@@ -4,11 +4,7 @@ const IntroSection = ({ introHeader, introCaption }) => (
   <div className="row center-xs">
     <div className="col-sm-6 col-xs-10">
       <h1>{introHeader}</h1>
-      <p className="intro">{introCaption.map(c => (
-        <Fragment key={c}>
-          {c}
-        </Fragment>
-      ))}</p>
+      <p className="intro" dangerouslySetInnerHTML={{__html: introCaption}} />
     </div>
   </div>
 );
