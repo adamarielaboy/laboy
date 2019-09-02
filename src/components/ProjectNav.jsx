@@ -1,43 +1,27 @@
 import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
-export default class ProjectNav extends Component {
-  constructor() {
-    super();
-    this.state = {
-      next: {},
-      previous: {},
+const ProjectNav = ({ projects }) => {
+  let index;
+
+  for(let i = 0; i < projects.length; i++) {
+    if (projects[i].url === window.location.pathname) {
+      index = i;
     }
   }
 
-  UNSAFE_componentWillMount() {
-    const { projects } = this.props;
-    let index;
+  const projectIndexAmount = projects.length - 1;
+  const nextIndex = index === projectIndexAmount ? 0 : index + 1;
+  const previousIndex = index === 0 ? projectIndexAmount : index - 1;
 
-    for(let i = 0; i < projects.length; i++) {
-      if (projects[i].url === window.location.pathname) {
-        index = i;
-      }
-    }
-
-    const projectAmount = projects.length - 1;
-    const nextIndex = index === projectAmount ? 0 : index + 1;
-    const previousIndex = index === 0 ? projectAmount : index - 1;
-
-    this.setState({
-      next: projects[nextIndex],
-      previous: projects[previousIndex],
-    });
-  }
-
-  render() {
-    const { next, previous } = this.state;
-    return (
-      <div className="row project-navigation-wrapper">
-        <div className="col-xs-12">
-          { previous && previous.url && <a href={previous.url} className="project-navigation-links previous-project">{"< Previous"}</a> }
-          { next && next.url && <a href={next.url} className="project-navigation-links next-project">{"Next >"}</a> }
-        </div>
+  return (
+    <div className="row project-navigation-wrapper">
+      <div className="col-xs-12">
+        { !isNaN(previousIndex) && <Link to={projects[previousIndex].url} className="project-navigation-links previous-project">{"< Previous"}</Link> }
+        { !isNaN(nextIndex) && <Link to={projects[nextIndex].url} className="project-navigation-links next-project">{"Next >"}</Link> }
       </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default withRouter(ProjectNav);

@@ -63,6 +63,10 @@ a:hover {
   padding-left: 15px;
 }
 
+span.navbar-links:hover {
+  cursor: pointer;
+}
+
 .project-navigation-wrapper {
   position: relative;
 }
@@ -87,12 +91,14 @@ a:hover {
 }
 
 .methodology-box {
-  /* border: 2px dashed #000000; */
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 30px;
   box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2), 10px 0px 10px rgba(0, 0, 0, 0.2);
-  /* border-left: 5px solid rgba(0, 0, 0, 0.1); */
+}
+
+ul {
+  list-style: none;
 }
 
 /* For tablet */

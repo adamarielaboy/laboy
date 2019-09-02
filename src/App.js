@@ -7,32 +7,19 @@ import Enroute from './pages/Enroute';
 import Nav from './components/Nav';
 import ProjectNav from './components/ProjectNav';
 
-const PROJECTS = [
-  {
-    name: "Odyssey",
-    url: "/odyssey"
-  },
-  {
-    name: "Main",
-    url: "/"
-  },
-  {
-    name: "Enroute",
-    url: "/enroute"
-  }
-]
+import mainContent from './content/main.json';
 
 export default class App extends Component {
     render() {
       return (
         <Fragment>
-          <Nav />
-          <ProjectNav projects={PROJECTS} />
           <Router>
+            <Nav projects={mainContent.nav.projects} logo={mainContent.nav.logo} />
+            <ProjectNav projects={mainContent.nav.projects} />
             <Switch>
                 <Route path="/" exact component={Main}/>
-                <Route path="/odyssey" component={Odyssey}/>
-                <Route path="/enroute" component={Enroute}/>
+                <Route path="/projects/odyssey" component={Odyssey}/>
+                <Route path="/projects/enroute" component={Enroute}/>
             </Switch>
           </Router>
         </Fragment>

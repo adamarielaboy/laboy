@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "logo": "/static/images/laboy-logo.svg",
+    "projects": [
+      {
+        "name": "Odyssey",
+        "url": "/projects/odyssey"
+      },
+      {
+        "name": "Enroute",
+        "url": "/projects/enroute"
+      }
+    ]
+  }
+}

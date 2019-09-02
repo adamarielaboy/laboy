@@ -1,7 +1,4 @@
-// const path = require('path');
-
 import React, { Fragment } from 'react';
-import imageFile from "../assets/odyssey-project/citi-photo.png";
 
 // Example: <ImageSection images={[]} header={} caption={[]} />
 const ImageSection = ({ images, header, caption }) => (
@@ -20,16 +17,10 @@ const ImageSection = ({ images, header, caption }) => (
     <div className="row center-xs">
       <div className="col-xs-12 col-sm-10">
         {
-          images.map(image => {
-            // const img = require("assets/odyssey-project/challenge.png");
-            const img = require(`assets/odyssey-project/${image.alt}`);
-            console.log(image.alt);
-            
-            
-            return (
-              <img key={image.url} src={img} alt={image.alt} />
+          images.map(image => (
+              <img key={image.url} src={image.url} alt={image.alt} />
             )
-          })
+          )
         }
       </div>
     </div>

@@ -1,0 +1,65 @@
+{
+  "topSection": {
+    "hero": {
+      "image": "/static/images/enroute-project/enroute-principal.png",
+      "name": "enroute-header"
+    },
+    "intro": {
+      "header": "Travel for the Knowledge-Hungry",
+      "content": "Capstone Project for Parsons School of Design’s program Strategic Design and Management <br/>In collaboration with: Hansel Huang"
+    },
+    "methodology": {
+      "header": "Methodologies",
+      "content": "Generative Research: in-depth interviews, diary studies, user interviews, literature reviews, storyboarding, affinity mapping, ecosystem mapping Evaluative Research: Usability Tests, Survey Design, Content Evaluation"
+    },
+    "description": "En route is an app that provides seamless travel plans curated by you for you. We want to be the friend who’s showing you around town when you don’t have that local friend in town. We spare you the pain of planning journey, so you can be en route for your actual big journey. Check out the prototype here: <a href=\"https://invis.io/YZRW8AFVJ2S\" color=\"#11adad\">https://invis.io/YZRW8AFVJ2S</a>"
+  },
+  "imageSections": [{
+    "header": "To be Fed or to be Fab",
+    "caption": "We combined our previous design research projects on food psychology and retail and found a common ground: The human pursuit of self-identity. In an age of constant exposure to social currency, people are moved by offline and online social experiences that nurture one’s identity. To many people, food and fashion are “identity vehicles”.",
+    "images": [
+      {
+        "url": "/static/images/enroute-project/foodandfashion.png", "name": "foodandfashion"
+      }
+    ]
+  },
+  {
+    "header": "Travel: Unleashing Behaviors",
+    "caption": "Food and fashion are phenomenons that have moved from being physical and physiological necessities. Nowadays, they enable knowledge, identity, and empowerment.",
+    "images": [
+      {
+        "url": "/static/images/enroute-project/food-and-fashion-pyramid.png", "name": "pyramid"
+      }
+    ]
+  },
+  {
+    "header": "It's a Fragmented Memory...",
+    "caption": "Traveling is planning, some do a lot, some prefer to just buy the tickets and let it “flow”. For curious travelers, the takeaway must be learning. If you’re spending money on the trip, might as well take the best out of it! But sometimes traveling is fragmented. From the moment we start researching, we open a million tabs, store the findings in notes, email, or an online shareable document. At the destination, we rely on a GPS and previous experiences. What are the takeaways after the trip is completed? Do we remember what we were looking for? What those memories look like in a week? A month? A year? It fades away… and we’d like to avoid that.",
+    "images": [
+      {
+        "url": "/static/images/enroute-project/the-opportunity.png", "name": "opportunity"
+      },
+      {
+        "url": "/static/images/enroute-project/value-proposition.png", "name": "valueproposition"
+      }
+    ]
+  },
+  {
+    "header": "The Design Solution",
+    "caption": "We built our product having in mind the following archetype: an avant-garde, curious hedonist who travels not only to learn from another place, but to know what resonates with their ever-adaptable identity.",
+    "images": [
+      {
+        "url": "/static/images/enroute-project/personalize.png", "name": "personalize"
+      },
+      {
+        "url": "/static/images/enroute-project/weather.png", "name": "weather"
+      },
+      {
+        "url": "/static/images/enroute-project/neighborhood.png", "name": "neighborhood"
+      },
+      {
+        "url": "/static/images/enroute-project/debrief.png", "name": "debrief"
+      }
+    ]
+  }]
+}

@@ -1,7 +1,7 @@
 {
   "topSection": {
     "hero": {
-      "image": "assets/odyssey-project/citi-photo.png",
+      "image": "/static/images/odyssey-project/citi-photo.png",
       "name": "citi-header"
     },
     "intro": {
@@ -18,10 +18,10 @@
     "caption": "",
     "images": [
       {
-        "url": "assets/odyssey-project/challenge.png", "name": "challenge"
+        "url": "/static/images/odyssey-project/challenge.png", "name": "challenge"
       },
       {
-        "url": "assets/odyssey-project/mind-mapping.png", "name": "mind map"
+        "url": "/static/images/odyssey-project/mind-mapping.png", "name": "mind map"
       }
     ]
   },
@@ -30,7 +30,7 @@
     "caption": "Design Research is tied with design thinking, which comes from decades of research in the social sciences field. It can provide us a starting point that might lead us to human behavioral patterns that we can continue discovering in the research process <br/>",
     "images": [
       {
-        "url": "assets/odyssey-project/triangulation.png", "name": "triangulation"
+        "url": "/static/images/odyssey-project/triangulation.png", "name": "triangulation"
       }
     ]
   },
@@ -39,7 +39,7 @@
     "caption": "Decades of social sciences have taught us that we are able to analyze human behaviors and patterns, yet, these are adaptable. What has been said? We stumbled upon an interesting theory that gave us a solid foundation to build hypotheses moving forward.",
     "images": [
       {
-        "url": "assets/odyssey-project/literature-review.png", "name": "career identity"
+        "url": "/static/images/odyssey-project/literature-review.png", "name": "career identity"
       }
     ]
   },
@@ -48,13 +48,13 @@
     "caption": "What we did? 1:1 Interviews, Participatory Workshops (Context Mapping, Card Sorting, and Ecosystem Mapping), and Ethnographic Field Studies",
     "images": [
       {
-        "url": "assets/odyssey-project/three-pillars.png", "name": "three pillars"
+        "url": "/static/images/odyssey-project/three-pillars.png", "name": "three pillars"
       },
       {
-        "url": "assets/odyssey-project/interview-screener.png", "name": "interview screener"
+        "url": "/static/images/odyssey-project/interview-screener.png", "name": "interview screener"
       },
       {
-        "url": "assets/odyssey-project/discussion-guide.png", "name": "discussion-guide"
+        "url": "/static/images/odyssey-project/discussion-guide.png", "name": "discussion-guide"
       }
     ]
   },
@@ -63,10 +63,10 @@
     "caption": "Were we focusing on the right problem? Is the problem about unfilled positions and a high unemployment rate? Not really, but that was a consequence. The problem lies that people change careers more often than before with the purpose of finding a \"higher calling\". People don't want to waste time in an unfulfilling job, no matter the pay. Career changers ARE job seekers, they just needed a guidance, something that helped them define their CAREER IDENTITY.",
     "images": [
       {
-        "url": "assets/odyssey-project/insight-recipe.png", "name": "insight-recipe"
+        "url": "/static/images/odyssey-project/insight-recipe.png", "name": "insight-recipe"
       },
       {
-        "url": "assets/odyssey-project/perennial.png", "name": "the perennial objective and the realization"
+        "url": "/static/images/odyssey-project/perennial.png", "name": "the perennial objective and the realization"
       }
     ]
   },
@@ -75,10 +75,10 @@
     "caption": "Like Ulysses trying to find Ithaca, career changers are looking their own thread, a job that resonates with them. Here's our design recommendation:",
     "images": [
       {
-        "url": "assets/odyssey-project/final-concept.png", "name": "final concept"
+        "url": "/static/images/odyssey-project/final-concept.png", "name": "final concept"
       },
       {
-        "url": "assets/odyssey-project/key-user-results.png", "name": "key user results"
+        "url": "/static/images/odyssey-project/key-user-results.png", "name": "key user results"
       }
     ]
   },
@@ -87,7 +87,7 @@
     "caption": "Here's the link to the Odyssey prototype: and the link for the Document we crafted for the Client and Parsons:",
     "images": [
       {
-        "url": "assets/odyssey-project/buddies.jpeg", "name": "partners"
+        "url": "/static/images/odyssey-project/buddies.jpeg", "name": "partners"
       }
     ]
   }]
