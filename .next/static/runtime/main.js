@@ -6443,7 +6443,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/mfjvacas/Documents/Dev/GitHub/projects/laboy/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/miguelvacas/Documents/Dev/personal/laboy/.next");
       return error;
     }
   };
