@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import ImageSection from '../components/ImageSection';
 import TopSection from '../components/TopSection';
-import enrouteContent from '../content/enroute.json';
+// import enrouteContent from '/static/content/enroute.json.js';
 
 export default class Main extends Component {
     render() {

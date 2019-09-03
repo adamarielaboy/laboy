@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        app: ['./src/index.jsx'],
+        app: ['./pages/index.jsx'],
         vendor: ['react', 'react-dom'],
     },
     output: {
@@ -23,7 +23,7 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[path][name].[ext]',
-                    outputPath: './src/assets',
+                    outputPath: './pages/assets',
                     publicPath: '.',
                 },
             },

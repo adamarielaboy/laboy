@@ -7,7 +7,7 @@ import Enroute from './pages/Enroute';
 import Nav from './components/Nav';
 import ProjectNav from './components/ProjectNav';
 
-import mainContent from './content/main.json';
+// import mainContent from '/static/content/main.json.js';
 
 export default class App extends Component {
     render() {

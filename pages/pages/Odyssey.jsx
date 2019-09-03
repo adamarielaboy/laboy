@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import TopSection from '../components/TopSection';
 import ImageSection from '../components/ImageSection';
-import odysseyContent from '../content/odyssey.json';
+// import odysseyContent from '/static/content/odyssey.json.js';
 
 export default class Main extends Component {
     render() {
