@@ -33,7 +33,7 @@ module.exports = {
     plugins: [
         new webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, './index.template.html'),
+            template: path.join(__dirname, './index.html'),
         }),
         new webpack.LoaderOptionsPlugin({
             minimize: true,

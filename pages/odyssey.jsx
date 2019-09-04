@@ -3,7 +3,7 @@ import TopSection from '../components/TopSection';
 import ImageSection from '../components/ImageSection';
 import PageWrapper from '../layout/pageWrapper';
 
-import odysseyContent from '/static/content/odyssey.json.js';
+import odysseyContent from '/static/content/odyssey.json';
 
 export default class Main extends Component {
     render() {

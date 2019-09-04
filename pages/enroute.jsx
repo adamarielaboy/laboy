@@ -3,7 +3,7 @@ import ImageSection from '../components/ImageSection';
 import TopSection from '../components/TopSection';
 import PageWrapper from '../layout/pageWrapper';
 
-import enrouteContent from '/static/content/enroute.json.js';
+import enrouteContent from '/static/content/enroute.json';
 
 export default class Main extends Component {
     render() {
