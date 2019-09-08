@@ -7,8 +7,16 @@ export default class Main extends Component {
       return (
             <PageWrapper>
                 This is the main page
-                <Link to="/odyssey">Odyssey</Link>
-                <Link to="/enroute">Enroute</Link>
+                <Link>
+                    <a href="/odyssey">
+                        Odyssey
+                    </a>
+                </Link>
+                <Link>
+                    <a href="/enroute">
+                        Enroute
+                    </a>
+                </Link>
             </PageWrapper>
         )
     }

@@ -17,8 +17,19 @@ const ProjectNav = ({ projects }) => {
   return (
     <div className="row project-navigation-wrapper">
       <div className="col-xs-12">
-        { !isNaN(previousIndex) && <Link to={projects[previousIndex].url} className="project-navigation-links previous-project">{"< Previous"}</Link> }
-        { !isNaN(nextIndex) && <Link to={projects[nextIndex].url} className="project-navigation-links next-project">{"Next >"}</Link> }
+        { !isNaN(previousIndex) && (
+          <Link>
+            <a className="project-navigation-links previous-project" href={projects[previousIndex].url}>
+              {"< Previous"}
+            </a>
+          </Link>
+        ) }
+        { !isNaN(nextIndex) && 
+            (<Link>
+              <a className="project-navigation-links next-project" href={projects[nextIndex].url}>
+                {"Next >"}
+              </a>
+            </Link>) }
       </div>
     </div>
   )

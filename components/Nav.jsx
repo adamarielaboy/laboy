@@ -18,8 +18,10 @@ export default class Nav extends Component {
         <div className="container-fluid">
           <div className="row middle-xs nav-wrapper">
             <div className="col-sm-4">
-              <Link to="/">
-                <img className="nav-logo" src={logo} alt="laboy logo" />
+              <Link>
+                <a href="/">
+                  <img className="nav-logo" src={logo} alt="laboy logo" />
+                </a>
               </Link>
             </div>
             <div className="col-sm-6 col-sm-offset-2 end-sm">
@@ -63,7 +65,11 @@ export default class Nav extends Component {
                           {
                             projects.map(project => (
                               <li key={project.name}>
-                                <Link to={project.url}>{project.name}</Link>
+                                <Link>
+                                  <a href={project.url}>
+                                    {project.name}
+                                  </a>
+                                </Link>
                               </li>
                             ))
                           }
@@ -73,13 +79,17 @@ export default class Nav extends Component {
                   }
                 </li>
                 <li>
-                  <Link to="/" className="navbar-links">
-                    About
+                  <Link>
+                    <a className="navbar-links" href="/">
+                      About
+                    </a>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="navbar-links">
-                    Contact
+                  <Link>
+                    <a className="navbar-links" href="/">
+                      Contact
+                    </a>
                   </Link>
                 </li>
               </ul>
