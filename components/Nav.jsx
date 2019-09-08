@@ -17,14 +17,14 @@ export default class Nav extends Component {
       <nav>
         <div className="container-fluid">
           <div className="row middle-xs nav-wrapper">
-            <div className="col-sm-4">
+            <div className="col-sm-4 col-xs-4">
               <Link href="/">
                 <a>
                   <img className="nav-logo" src={logo} alt="laboy logo" />
                 </a>
               </Link>
             </div>
-            <div className="col-sm-6 col-sm-offset-2 end-sm">
+            <div className="col-sm-6 col-sm-offset-2 end-sm col-xs-8">
               <ul style={{
                 display: "flex",
                 justifyContent: "flex-end",
