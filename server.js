@@ -3,6 +3,8 @@ const express = require('express');
 
 const routes = require('next-routes')();
 
+const port = process.env.PORT || 3000;
+
 routes
   .add('index', '/')
   .add('enroute', '/projects/enroute')
@@ -15,5 +17,7 @@ const handler = routes.getRequestHandler(app);
 app.prepare().then(() => {
   const server = express();
 
-  server.use(handler).listen(3000);
+  server.use(handler).listen(port);
+
+  console.log(`Connected to ${port}`);
 })

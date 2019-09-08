@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import ImageSection from '../components/ImageSection';
-import TopSection from '../components/TopSection';
-import PageWrapper from '../layout/pageWrapper';
+import ImageSection from '../../components/ImageSection';
+import TopSection from '../../components/TopSection';
+import PageWrapper from '../../layout/pageWrapper';
 
 import enrouteContent from '/static/content/enroute.json';
 

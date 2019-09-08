@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import TopSection from '../components/TopSection';
-import ImageSection from '../components/ImageSection';
-import PageWrapper from '../layout/pageWrapper';
+import TopSection from '../../components/TopSection';
+import ImageSection from '../../components/ImageSection';
+import PageWrapper from '../../layout/pageWrapper';
 
 import odysseyContent from '/static/content/odyssey.json';
 

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Link from 'next/link';
 
 export default class Nav extends Component {
@@ -18,8 +18,8 @@ export default class Nav extends Component {
         <div className="container-fluid">
           <div className="row middle-xs nav-wrapper">
             <div className="col-sm-4">
-              <Link>
-                <a href="/">
+              <Link href="/">
+                <a>
                   <img className="nav-logo" src={logo} alt="laboy logo" />
                 </a>
               </Link>
@@ -65,8 +65,8 @@ export default class Nav extends Component {
                           {
                             projects.map(project => (
                               <li key={project.name}>
-                                <Link>
-                                  <a href={project.url}>
+                                <Link href={project.url}>
+                                  <a>
                                     {project.name}
                                   </a>
                                 </Link>
@@ -79,15 +79,15 @@ export default class Nav extends Component {
                   }
                 </li>
                 <li>
-                  <Link>
-                    <a className="navbar-links" href="/">
+                  <Link href="/">
+                    <a className="navbar-links">
                       About
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link>
-                    <a className="navbar-links" href="/">
+                  <Link href="/">
+                    <a className="navbar-links">
                       Contact
                     </a>
                   </Link>

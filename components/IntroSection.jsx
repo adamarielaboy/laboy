@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const IntroSection = ({ introHeader, introCaption }) => (
   <div className="row center-xs">

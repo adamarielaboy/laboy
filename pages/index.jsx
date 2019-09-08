@@ -7,13 +7,13 @@ export default class Main extends Component {
       return (
             <PageWrapper>
                 This is the main page
-                <Link>
-                    <a href="/odyssey">
+                <Link href="/projects/odyssey">
+                    <a>
                         Odyssey
                     </a>
                 </Link>
-                <Link>
-                    <a href="/enroute">
+                <Link href="/projects/enroute">
+                    <a>
                         Enroute
                     </a>
                 </Link>

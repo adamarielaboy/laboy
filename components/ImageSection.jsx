@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 // Example: <ImageSection images={[]} header={} caption={[]} />
 const ImageSection = ({ images, header, caption }) => (
