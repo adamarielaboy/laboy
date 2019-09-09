@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 
+/*
+  TODO: all inline style put into CSS
+*/
+
 export default class Nav extends Component {
   constructor() {
     super();
@@ -50,7 +54,8 @@ export default class Nav extends Component {
                   {
                     projectsHover && (
                       <div style={{
-                        position: "relative"
+                        position: "relative",
+                        cursor: "pointer",
                       }}>
                           <ul 
                             className="navbar-links"
@@ -59,12 +64,20 @@ export default class Nav extends Component {
                               display: "flex",
                               justifyContent: "center",
                               alignItems: "center",
-                              flexWrap: "wrap"
+                              flexWrap: "wrap",
+                              backgroundColor: "white",
+                              padding: "10px 10px 10px 15px",
+                              backgroundColor: "rgba(255, 255, 255, 0.9)",
                             }}
                           >
                           {
                             projects.map(project => (
-                              <li key={project.name}>
+                              <li
+                                key={project.name}
+                                style={{
+                                  paddingTop: 10,
+                                }}
+                              >
                                 <Link href={project.url}>
                                   <a>
                                     {project.name}

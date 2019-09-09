@@ -38,6 +38,7 @@ img {
 }
 
 nav {
+  background-color: white;
   width: 100%;
   position: fixed;
   padding: 10px 0;
@@ -88,6 +89,10 @@ span.navbar-links:hover {
 .intro {
   font-size: 18px;
   color: #11adad;
+}
+
+.hero {
+  margin-top: 10px;
 }
 
 .methodology-box {

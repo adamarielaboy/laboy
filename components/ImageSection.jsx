@@ -15,7 +15,7 @@ const ImageSection = ({ images, header, caption }) => (
   )}
   { images && images.length > 0 && (
     <div className="row center-xs">
-      <div className="col-xs-12 col-sm-10">
+      <div className="col-xs-12 col-sm-10 col-md-8">
         {
           images.map(image => (
               <img key={image.url} src={image.url} alt={image.alt} />
