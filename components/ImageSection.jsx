@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageZoom from 'react-medium-image-zoom'
 
 // Example: <ImageSection images={[]} header={} caption={[]} />
 const ImageSection = ({ images, header, caption }) => (
@@ -18,7 +19,13 @@ const ImageSection = ({ images, header, caption }) => (
       <div className="col-xs-12 col-sm-10 col-md-8">
         {
           images.map(image => (
-              <img key={image.url} src={image.url} alt={image.alt} />
+              <ImageZoom
+                key={image.url}
+                image={{
+                  src: image.url,
+                  alt: image.alt
+                }}
+              />
             )
           )
         }

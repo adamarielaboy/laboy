@@ -5,12 +5,10 @@ import { withRouter } from 'next/router';
 class ProjectNav extends React.Component {
   constructor() {
     super();
-    this.resize = this.resize.bind(this);
 
     this.state = {
       previousIndex: 0,
       nextIndex: 0,
-      isMobile: false,
     }
   }
 
@@ -34,35 +32,9 @@ class ProjectNav extends React.Component {
     });
   }
 
-  componentDidMount() {
-    window.addEventListener('resize', this.resize);
-
-    this.resize();
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.resize);
-  }
-
-  resize() {
-    const { isMobile } = this.state;
-    
-    if (window.innerWidth < 767 && !isMobile) {
-      this.setState({
-        isMobile: true
-      });
-    }
-
-    if (window.innerWidth >= 767 && isMobile) {
-      this.setState({
-        isMobile: false,
-      });
-    }
-  }
-
   render() {
-    const { previousIndex, nextIndex, isMobile } = this.state;
-    const { projects, router } = this.props;
+    const { previousIndex, nextIndex } = this.state;
+    const { projects, router, isMobile } = this.props;
 
     if (!router.asPath.includes('/projects')) {
       return null;
