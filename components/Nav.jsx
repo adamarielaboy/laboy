@@ -13,9 +13,11 @@ export default class Nav extends Component {
       projectsHover: false,
     }
   }
+
+
   render() {
     const { projectsHover } = this.state;
-    const { projects, logo } = this.props;
+    const { projects, logo, isMobile } = this.props;
 
     return (
       <nav>
