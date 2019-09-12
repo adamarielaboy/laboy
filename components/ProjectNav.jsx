@@ -14,7 +14,7 @@ class ProjectNav extends React.Component {
     this.state = {
       previousIndex: 0,
       nextIndex: 0,
-      isScrolling: false
+      isScrolling: true
     }
   }
 
@@ -56,7 +56,7 @@ class ProjectNav extends React.Component {
       this.setState({
         isScrolling: false
       })
-    }, 2000)
+    }, 1000);
   }
 
   componentWillUnmount() {
